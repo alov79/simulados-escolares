@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<meta name="theme-color" content="#111827"/>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Expires" content="0"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<title>Missão Nota 10 • Duda • 7º ano</title>
+<link rel="stylesheet" href="app-v4.css?v=20260730-4"/>
+</head>
+<body>
+<div aria-labelledby="modalTitle" aria-modal="true" class="modal hidden" id="missionModal" role="dialog">
+  <div class="modal-box" id="modalBox">
+    <div class="modal-top">
+      <div class="modal-title-wrap">
+        <span class="badge" id="modalBadge">MISSÃO</span>
+        <h2 id="modalTitle">Título</h2>
+        <p class="small" id="modalDesc"></p>
+      </div>
+      <button aria-label="Fechar exercício" class="close-modal" id="closeModal" type="button">✕ <span>Fechar</span></button>
+    </div>
+    <div class="modal-body">
+      <div aria-label="Etapas da missão" class="tabs" id="missionTabs"></div>
+      <div id="missionPanels"></div>
+    </div>
+  </div>
+</div>
+
+<main class="shell">
+<header class="topbar">
+  <a class="brand" href="./"><span class="brand-mark">🚀</span><span>Missão Nota 10 • Duda</span></a>
+  <nav class="nav">
+    <a href="#agenda">Agenda</a>
+    <a href="#trilhas">Matérias</a>
+    <a class="avatar-link" href="avatar.html">🎨 Meu avatar</a>
+    <a href="#desempenho">Desempenho</a>
+    <button class="ghost" id="resetBtn" type="button">Reiniciar progresso</button>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <span class="badge dark">7º ANO • ACESSO LIVRE</span>
+    <h1>Duda, escolha sua missão e comece.</h1>
+    <p>Todos os deveres, revisões e simulados disponíveis estão liberados. Você pode estudar qualquer matéria, em qualquer ordem, e refazer as atividades quantas vezes desejar.</p>
+    <div class="stats">
+      <div class="stat"><span>⭐ XP TOTAL</span><b id="xp">0</b></div>
+      <div class="stat"><span>🪙 SALDO</span><b id="coins">0</b></div>
+      <div class="stat"><span>🔥 SEQUÊNCIA</span><b id="streak">0 dias</b></div>
+      <div class="stat"><span>🏅 MATÉRIAS</span><b id="done">0</b></div>
+    </div>
+  </div>
+  <aside class="hero-side">
+    <div class="hero-stack">
+      <div class="avatar-mini-card">
+        <div class="avatar-mini-preview" id="homeAvatar"></div>
+        <div>
+          <span class="badge orange">MEU PERSONAGEM</span>
+          <h3 id="homeAvatarName">Astronauta</h3>
+          <p>Ganhe moedas nos exercícios e desbloqueie avatares e acessórios.</p>
+          <a class="btn orange full" href="avatar.html">Abrir loja de avatares</a>
+        </div>
+      </div>
+      <div class="next-card">
+        <span class="badge blue">TRILHA COMPLETA</span>
+        <h3>🇬🇧 Inglês nº 03</h3>
+        <p>50 questões em 5 exercícios: vocabulário, leitura, household chores e have to / don’t have to.</p>
+        <button class="btn blue full open-mission" data-id="english03" data-start="exercise1" type="button">Começar exercícios</button>
+      </div>
+    </div>
+  </aside>
+</section>
+
+<section class="section">
+  <article class="open-banner">
+    <div>
+      <h2>Todos os conteúdos estão abertos</h2>
+      <p>Não existe bloqueio por data, pontuação ou conclusão anterior. Duda pode abrir diretamente a revisão ou o simulado de qualquer matéria.</p>
+    </div>
+    <div class="unlock-icon">🔓</div>
+  </article>
+</section>
+
+<section class="section" id="agenda">
+  <div class="section-title">
+    <div><h2>📅 Agenda da 2ª unidade</h2><p>O calendário continua como referência, mas as atividades permanecem disponíveis para treino.</p></div>
+    <span class="badge green">ACESSO LIVRE</span>
+  </div>
+  <div class="schedule">
+    <article class="week"><div class="week-date">27 a 31 JUL</div><div class="events"><span class="event active">🇬🇧 Inglês nº 03</span><span class="event active">📐 Matemática nº 03</span></div></article>
+    <article class="week"><div class="week-date">03 a 07 AGO</div><div class="events"><span class="event">🙏 Ensino Religioso nº 03</span><span class="event">🏛️ História nº 04</span></div></article>
+    <article class="week"><div class="week-date">10 a 14 AGO</div><div class="events"><span class="event">✍️ Redação nº 03</span><span class="event">📖 Português nº 03</span><span class="event">🔬 Ciências nº 03</span></div></article>
+    <article class="week"><div class="week-date">17 a 21 AGO</div><div class="events"><span class="event">➗ Matemática nº 04</span><span class="event">🌎 Geografia nº 03</span></div></article>
+  </div>
+</section>
+
+<section class="section" id="trilhas">
+  <div class="section-title">
+    <div><h2>🗺️ Escolha uma matéria</h2><p>Use “Revisar” para estudar o conteúdo ou “Fazer simulado” para ir direto às questões.</p></div>
+  </div>
+  <div class="grid">
+    <article class="card subject english"><div class="icon">🇬🇧</div><span class="badge blue">INGLÊS</span><span class="access-pill">🔓 Liberado</span><h3>Furniture &amp; chores</h3><p>50 questões exclusivas divididas em cinco exercícios de dificuldade progressiva.</p><div class="mission-actions"><button class="btn soft open-mission" data-id="english03" data-start="review" type="button">Revisar</button><button class="btn blue open-mission" data-id="english03" data-start="exercise1" type="button">5 exercícios</button></div></article>
+    <article class="card subject math"><div class="icon">📐</div><span class="badge">MATEMÁTICA</span><span class="access-pill">🔓 Liberado</span><h3>Retas, ângulos e paralelismo</h3><p>Conceitos geométricos, classificação de ângulos e reconhecimento de retas.</p><div class="mission-actions"><button class="btn soft open-mission" data-id="math03" data-start="review" type="button">Revisar</button><button class="btn open-mission" data-id="math03" data-start="challenge" type="button">Fazer simulado</button></div></article>
+    <article class="card subject religion"><div class="icon">🙏</div><span class="badge green">ENSINO RELIGIOSO</span><span class="access-pill">🔓 Liberado</span><h3>Justiça e Reino de Deus</h3><p>A moral do Reino, justiça e construção de uma sociedade sem preconceitos.</p><div class="mission-actions"><button class="btn soft open-mission" data-id="religion03" data-start="review" type="button">Revisar</button><button class="btn green open-mission" data-id="religion03" data-start="challenge" type="button">Fazer simulado</button></div></article>
+    <article class="card subject history"><div class="icon">🏛️</div><span class="badge orange">HISTÓRIA</span><span class="access-pill">🔓 Liberado</span><h3>Estado Moderno e Navegações</h3><p>Absolutismo, mercantilismo, formação do Estado Moderno e Grandes Navegações.</p><div class="mission-actions"><button class="btn soft open-mission" data-id="history04" data-start="review" type="button">Revisar</button><button class="btn orange open-mission" data-id="history04" data-start="challenge" type="button">Fazer simulado</button></div></article>
+    <article class="card subject portuguese"><div class="icon">✍️</div><span class="badge orange">REDAÇÃO</span><span class="access-pill">🔓 Liberado</span><h3>Crônica narrativa</h3><p>Trama, personagens, ambiente, marcadores temporais, adjetivação e efeitos de sentido.</p><div class="mission-actions"><button class="btn soft open-mission" data-id="writing03" data-start="review" type="button">Revisar</button><button class="btn orange open-mission" data-id="writing03" data-start="challenge" type="button">Fazer simulado</button></div></article>
+    <article class="card subject portuguese"><div class="icon">📖</div><span class="badge">PORTUGUÊS</span><span class="access-pill">🔓 Liberado</span><h3>Crônica e análise linguística</h3><p>Intertextualidade, figuras de linguagem, advérbios, sujeito e predicado.</p><div class="mission-actions"><button class="btn soft open-mission" data-id="portuguese03" data-start="review" type="button">Revisar</button><button class="btn open-mission" data-id="portuguese03" data-start="challenge" type="button">Fazer simulado</button></div></article>
+    <article class="card subject science"><div class="icon">🔬</div><span class="badge green">CIÊNCIAS</span><span class="access-pill">🔓 Liberado</span><h3>Defesas, fungos e invertebrados</h3><p>Vacinas, medicamentos, Reino Fungi e introdução aos filos dos invertebrados.</p><div class="mission-actions"><button class="btn soft open-mission" data-id="science03" data-start="review" type="button">Revisar</button><button class="btn green open-mission" data-id="science03" data-start="challenge" type="button">Fazer simulado</button></div></article>
+    <article class="card subject math"><div class="icon">➗</div><span class="badge">MATEMÁTICA</span><span class="access-pill">🔓 Liberado</span><h3>Inteiros, racionais e equações</h3><p>Operações, situações-problema, conceitos algébricos e equações do 1º grau.</p><div class="mission-actions"><button class="btn soft open-mission" data-id="math04" data-start="review" type="button">Revisar</button><button class="btn open-mission" data-id="math04" data-start="challenge" type="button">Fazer simulado</button></div></article>
+    <article class="card subject geo"><div class="icon">🌎</div><span class="badge green">GEOGRAFIA</span><span class="access-pill">🔓 Liberado</span><h3>Cidade, campo e indústria</h3><p>Urbanização, desigualdades, produção, terra, trabalho, indústria e transportes.</p><div class="mission-actions"><button class="btn soft open-mission" data-id="geo03" data-start="review" type="button">Revisar</button><button class="btn green open-mission" data-id="geo03" data-start="challenge" type="button">Fazer simulado</button></div></article>
+    <article class="card subject science"><div class="icon">🧬</div><span class="badge blue">BIBLIOTECA</span><span class="access-pill">🔓 Liberado</span><h3>Ciências nº 02</h3><p>Relações ecológicas, classificação dos seres vivos, vírus, Monera e Protista.</p><div class="mission-actions"><button class="btn soft open-mission" data-id="science02" data-start="review" type="button">Revisar</button><button class="btn blue open-mission" data-id="science02" data-start="challenge" type="button">Fazer simulado</button></div></article>
+  </div>
+</section>
+
+<section class="section">
+  <article class="card avatar-home-card">
+    <div class="avatar-home-preview" id="avatarCardPreview"></div>
+    <div>
+      <span class="badge orange">🎨 AVATARES E ACESSÓRIOS</span>
+      <h2 id="avatarCardName">Astronauta</h2>
+      <p>Os exercícios rendem XP e moedas. As moedas podem ser usadas para desbloquear novos personagens, óculos, fones, livros, medalhas, coroas e outros acessórios.</p>
+      <a class="btn orange" href="avatar.html">Personalizar meu avatar</a>
+    </div>
+  </article>
+</section>
+
+<section class="section grid two" id="desempenho">
+  <article class="card">
+    <span class="badge">📊 DESEMPENHO</span>
+    <h2>Progresso por etapa</h2>
+    <div class="progress-row"><b>Revisões</b><div class="bar"><i id="reviewBar" style="width:0"></i></div><b id="reviewPct">0%</b></div>
+    <div class="progress-row"><b>Exercícios</b><div class="bar"><i id="warmupBar" style="width:0"></i></div><b id="warmupPct">0%</b></div>
+    <div class="progress-row"><b>Matérias</b><div class="bar"><i id="challengeBar" style="width:0"></i></div><b id="challengePct">0%</b></div>
+  </article>
+  <article class="card parent-note">
+    <span class="badge green">👨‍👩‍👧 RESPONSÁVEIS</span>
+    <h2>Visão rápida da jornada</h2>
+    <p id="parentSummary">Todos os deveres estão liberados.</p>
+    <p class="small">O progresso e as compras do avatar ficam salvos somente neste navegador, sem banco de dados.</p>
+  </article>
+</section>
+
+<footer class="footer">Missão Nota 10 • Duda • 7º ano • Acesso livre</footer>
+</main>
+<script src="data-v3.js?v=20260729-3"></script>
+<script src="avatar-system-v4.js?v=20260730-4"></script>
+<script src="app-v4.js?v=20260730-4"></script>
+</body>
+</html>
