@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/>
+<meta name="theme-color" content="#111827"/>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+<meta http-equiv="Pragma" content="no-cache"/>
+<meta http-equiv="Expires" content="0"/>
+<title>Meu Avatar • Duda • Missão Nota 10</title>
+<link rel="stylesheet" href="app-v4.css?v=20260730-4"/>
+</head>
+<body>
+<main class="shell">
+<header class="topbar">
+  <a class="brand" href="./"><span class="brand-mark">🚀</span><span>Missão Nota 10 • Duda</span></a>
+  <nav class="nav">
+    <a href="./">Início</a>
+    <a href="index-v4.html#trilhas">Matérias</a>
+    <a class="avatar-link" href="avatar.html">🎨 Meu avatar</a>
+  </nav>
+</header>
+
+<section class="avatar-hero">
+  <div>
+    <span class="badge orange">🎨 LOJA DE AVATARES</span>
+    <h1>Transforme pontos em novos visuais.</h1>
+    <p>Complete exercícios, ganhe moedas e use o saldo para desbloquear personagens e acessórios. As compras ficam salvas neste navegador.</p>
+    <div class="avatar-wallet">
+      <div><span>🪙 SALDO DISPONÍVEL</span><b id="balance">0</b></div>
+      <div><span>⭐ XP ACUMULADO</span><b id="xp">0</b></div>
+      <div><span>🛍️ MOEDAS USADAS</span><b id="spent">0</b></div>
+    </div>
+  </div>
+  <div class="avatar-preview-card">
+    <div id="avatarPreview"></div>
+    <h2 id="avatarName">Astronauta</h2>
+    <p id="accessoryName">Sem acessório</p>
+    <span class="badge green">VISUAL ATIVO</span>
+  </div>
+</section>
+
+<p class="avatar-notice hidden" id="notice" role="status"></p>
+
+<section class="section">
+  <div class="section-title"><div><h2>🧑 Escolha seu personagem</h2><p>O Astronauta já está liberado. Os demais são comprados com as moedas conquistadas nos estudos.</p></div></div>
+  <div class="shop-grid" id="avatarGrid"></div>
+</section>
+
+<section class="section">
+  <div class="section-title"><div><h2>✨ Escolha um acessório</h2><p>A Estrela do Saber é gratuita. Os outros acessórios podem ser desbloqueados com moedas.</p></div></div>
+  <div class="shop-grid" id="accessoryGrid"></div>
+</section>
+
+<section class="section grid two">
+  <article class="card">
+    <span class="badge orange">🪙 COMO GANHAR MOEDAS</span>
+    <h2>Faça exercícios e simulados</h2>
+    <p>Cada atividade concluída rende XP e moedas. Uma pontuação melhor também pode aumentar a recompensa daquela etapa.</p>
+    <a class="btn green" href="index-v4.html#trilhas">Escolher uma matéria</a>
+  </article>
+  <article class="card">
+    <span class="badge green">💾 SALVAMENTO LOCAL</span>
+    <h2>Sem banco de dados</h2>
+    <p>O avatar, os acessórios e o progresso ficam armazenados somente neste navegador e neste dispositivo.</p>
+    <a class="btn soft" href="./">Voltar ao painel</a>
+  </article>
+</section>
+
+<footer class="footer">Missão Nota 10 • Duda • Meu Avatar</footer>
+</main>
+
+<script src="avatar-system-v4.js?v=20260730-4"></script>
+<script>
+const $=id=>document.getElementById(id);
+let noticeTimer;
+function message(text,ok=true){
+  clearTimeout(noticeTimer);
+  $('notice').className='avatar-notice '+(ok?'good':'bad');
+  $('notice').textContent=(ok?'🎉 ':'💡 ')+text;
+  noticeTimer=setTimeout(()=>$('notice').classList.add('hidden'),4200)
+}
+function card(item,kind){
+  const s=DudaAvatarSystem.getState();
+  const owned=(kind==='avatar'?s.ownedAvatars:s.ownedAccessories).includes(item.id);
+  const active=(kind==='avatar'?s.activeAvatar:s.activeAccessory)===item.id;
+  const icon=kind==='avatar'?item.emoji:(item.emoji||'⭕');
+  let button;
+  if(active)button='<button class="btn soft full" disabled>✓ Em uso</button>';
+  else if(owned)button=`<button class="btn green full" data-equip="${kind}" data-id="${item.id}">Usar agora</button>`;
+  else button=`<button class="btn full" data-buy="${kind}" data-id="${item.id}">🪙 Desbloquear por ${item.price}</button>`;
+  return `<article class="shop-item ${active?'active':''}">
+    <div class="shop-icon ${kind==='accessory'?'accessory':''}">${icon}</div>
+    <span class="badge ${owned?'green':''}">${owned?'DESBLOQUEADO':'BLOQUEADO'}</span>
+    <h3>${item.name}</h3>
+    <p>${item.description||'Um item especial para personalizar sua jornada.'}</p>
+    ${button}
+  </article>`
+}
+function bind(){
+  document.querySelectorAll('[data-buy]').forEach(b=>b.onclick=()=>{
+    const r=DudaAvatarSystem.buy(b.dataset.buy,b.dataset.id);
+    if(r.ok){
+      DudaAvatarSystem.equip(b.dataset.buy,b.dataset.id);
+      message(r.message);
+      render()
+    }else message(r.message,false)
+  });
+  document.querySelectorAll('[data-equip]').forEach(b=>b.onclick=()=>{
+    const r=DudaAvatarSystem.equip(b.dataset.equip,b.dataset.id);
+    message(r.message,r.ok);
+    render()
+  })
+}
+function render(){
+  const c=DudaAvatarSystem.current();
+  DudaAvatarSystem.renderInto('avatarPreview','hero-avatar');
+  $('avatarName').textContent=c.avatar.name;
+  $('accessoryName').textContent=c.accessory.name;
+  $('balance').textContent=DudaAvatarSystem.balance();
+  $('xp').textContent=DudaAvatarSystem.xp();
+  $('spent').textContent=c.state.spent;
+  $('avatarGrid').innerHTML=DudaAvatarSystem.avatars.map(x=>card(x,'avatar')).join('');
+  $('accessoryGrid').innerHTML=DudaAvatarSystem.accessories.map(x=>card(x,'accessory')).join('');
+  bind()
+}
+window.addEventListener('duda-avatar-updated',render);
+render();
+</script>
+</body>
+</html>
