@@ -9,7 +9,7 @@
 <meta http-equiv="Expires" content="0"/>
 <meta name="apple-mobile-web-app-capable" content="yes"/>
 <title>Missão Nota 10 • Duda • 7º ano</title>
-<link rel="stylesheet" href="app-v4.css?v=20260730-4"/>
+<link rel="stylesheet" href="app-v4.css?v=20260730-5"/>
 </head>
 <body>
 <div aria-labelledby="modalTitle" aria-modal="true" class="modal hidden" id="missionModal" role="dialog">
@@ -45,7 +45,7 @@
   <div>
     <span class="badge dark">7º ANO • ACESSO LIVRE</span>
     <h1>Duda, escolha sua missão e comece.</h1>
-    <p>Todos os deveres, revisões e simulados disponíveis estão liberados. Você pode estudar qualquer matéria, em qualquer ordem, e refazer as atividades quantas vezes desejar.</p>
+    <p>Todas as temáticas estão liberadas, cada uma com 50 questões em cinco exercícios de 10. Você pode estudar qualquer matéria, em qualquer ordem, e refazer as atividades quantas vezes desejar.</p>
     <div class="stats">
       <div class="stat"><span>⭐ XP TOTAL</span><b id="xp">0</b></div>
       <div class="stat"><span>🪙 SALDO</span><b id="coins">0</b></div>
@@ -78,7 +78,7 @@
   <article class="open-banner">
     <div>
       <h2>Todos os conteúdos estão abertos</h2>
-      <p>Não existe bloqueio por data, pontuação ou conclusão anterior. Duda pode abrir diretamente a revisão ou o simulado de qualquer matéria.</p>
+      <p>Não existe bloqueio por data, pontuação ou conclusão anterior. Duda pode abrir diretamente a revisão ou os exercícios de qualquer matéria.</p>
     </div>
     <div class="unlock-icon">🔓</div>
   </article>
@@ -99,19 +99,19 @@
 
 <section class="section" id="trilhas">
   <div class="section-title">
-    <div><h2>🗺️ Escolha uma matéria</h2><p>Use “Revisar” para estudar o conteúdo ou “Fazer simulado” para ir direto às questões.</p></div>
+    <div><h2>🗺️ Escolha uma matéria</h2><p>Cada temática possui 50 questões em cinco exercícios de 10. Use “Revisar” ou comece diretamente pelo Exercício 1.</p></div>
   </div>
   <div class="grid">
     <article class="card subject english"><div class="icon">🇬🇧</div><span class="badge blue">INGLÊS</span><span class="access-pill">🔓 Liberado</span><h3>Furniture &amp; chores</h3><p>50 questões exclusivas divididas em cinco exercícios de dificuldade progressiva.</p><div class="mission-actions"><button class="btn soft open-mission" data-id="english03" data-start="review" type="button">Revisar</button><button class="btn blue open-mission" data-id="english03" data-start="exercise1" type="button">5 exercícios</button></div></article>
-    <article class="card subject math"><div class="icon">📐</div><span class="badge">MATEMÁTICA</span><span class="access-pill">🔓 Liberado</span><h3>Retas, ângulos e paralelismo</h3><p>Conceitos geométricos, classificação de ângulos e reconhecimento de retas.</p><div class="mission-actions"><button class="btn soft open-mission" data-id="math03" data-start="review" type="button">Revisar</button><button class="btn open-mission" data-id="math03" data-start="challenge" type="button">Fazer simulado</button></div></article>
-    <article class="card subject religion"><div class="icon">🙏</div><span class="badge green">ENSINO RELIGIOSO</span><span class="access-pill">🔓 Liberado</span><h3>Justiça e Reino de Deus</h3><p>A moral do Reino, justiça e construção de uma sociedade sem preconceitos.</p><div class="mission-actions"><button class="btn soft open-mission" data-id="religion03" data-start="review" type="button">Revisar</button><button class="btn green open-mission" data-id="religion03" data-start="challenge" type="button">Fazer simulado</button></div></article>
-    <article class="card subject history"><div class="icon">🏛️</div><span class="badge orange">HISTÓRIA</span><span class="access-pill">🔓 Liberado</span><h3>Estado Moderno e Navegações</h3><p>Absolutismo, mercantilismo, formação do Estado Moderno e Grandes Navegações.</p><div class="mission-actions"><button class="btn soft open-mission" data-id="history04" data-start="review" type="button">Revisar</button><button class="btn orange open-mission" data-id="history04" data-start="challenge" type="button">Fazer simulado</button></div></article>
-    <article class="card subject portuguese"><div class="icon">✍️</div><span class="badge orange">REDAÇÃO</span><span class="access-pill">🔓 Liberado</span><h3>Crônica narrativa</h3><p>Trama, personagens, ambiente, marcadores temporais, adjetivação e efeitos de sentido.</p><div class="mission-actions"><button class="btn soft open-mission" data-id="writing03" data-start="review" type="button">Revisar</button><button class="btn orange open-mission" data-id="writing03" data-start="challenge" type="button">Fazer simulado</button></div></article>
-    <article class="card subject portuguese"><div class="icon">📖</div><span class="badge">PORTUGUÊS</span><span class="access-pill">🔓 Liberado</span><h3>Crônica e análise linguística</h3><p>Intertextualidade, figuras de linguagem, advérbios, sujeito e predicado.</p><div class="mission-actions"><button class="btn soft open-mission" data-id="portuguese03" data-start="review" type="button">Revisar</button><button class="btn open-mission" data-id="portuguese03" data-start="challenge" type="button">Fazer simulado</button></div></article>
-    <article class="card subject science"><div class="icon">🔬</div><span class="badge green">CIÊNCIAS</span><span class="access-pill">🔓 Liberado</span><h3>Defesas, fungos e invertebrados</h3><p>Vacinas, medicamentos, Reino Fungi e introdução aos filos dos invertebrados.</p><div class="mission-actions"><button class="btn soft open-mission" data-id="science03" data-start="review" type="button">Revisar</button><button class="btn green open-mission" data-id="science03" data-start="challenge" type="button">Fazer simulado</button></div></article>
-    <article class="card subject math"><div class="icon">➗</div><span class="badge">MATEMÁTICA</span><span class="access-pill">🔓 Liberado</span><h3>Inteiros, racionais e equações</h3><p>Operações, situações-problema, conceitos algébricos e equações do 1º grau.</p><div class="mission-actions"><button class="btn soft open-mission" data-id="math04" data-start="review" type="button">Revisar</button><button class="btn open-mission" data-id="math04" data-start="challenge" type="button">Fazer simulado</button></div></article>
-    <article class="card subject geo"><div class="icon">🌎</div><span class="badge green">GEOGRAFIA</span><span class="access-pill">🔓 Liberado</span><h3>Cidade, campo e indústria</h3><p>Urbanização, desigualdades, produção, terra, trabalho, indústria e transportes.</p><div class="mission-actions"><button class="btn soft open-mission" data-id="geo03" data-start="review" type="button">Revisar</button><button class="btn green open-mission" data-id="geo03" data-start="challenge" type="button">Fazer simulado</button></div></article>
-    <article class="card subject science"><div class="icon">🧬</div><span class="badge blue">BIBLIOTECA</span><span class="access-pill">🔓 Liberado</span><h3>Ciências nº 02</h3><p>Relações ecológicas, classificação dos seres vivos, vírus, Monera e Protista.</p><div class="mission-actions"><button class="btn soft open-mission" data-id="science02" data-start="review" type="button">Revisar</button><button class="btn blue open-mission" data-id="science02" data-start="challenge" type="button">Fazer simulado</button></div></article>
+    <article class="card subject math"><div class="icon">📐</div><span class="badge">MATEMÁTICA</span><span class="access-pill">🔓 Liberado</span><h3>Retas, ângulos e paralelismo</h3><p>50 questões sobre retas, ângulos, paralelismo, cálculos e situações-problema.</p><div class="mission-actions"><button class="btn soft open-mission" data-id="math03" data-start="review" type="button">Revisar</button><button class="btn open-mission" data-id="math03" data-start="exercise1" type="button">5 exercícios</button></div></article>
+    <article class="card subject religion"><div class="icon">🙏</div><span class="badge green">ENSINO RELIGIOSO</span><span class="access-pill">🔓 Liberado</span><h3>Justiça e Reino de Deus</h3><p>50 questões sobre moral do Reino, justiça, dignidade, convivência e combate ao preconceito.</p><div class="mission-actions"><button class="btn soft open-mission" data-id="religion03" data-start="review" type="button">Revisar</button><button class="btn green open-mission" data-id="religion03" data-start="exercise1" type="button">5 exercícios</button></div></article>
+    <article class="card subject history"><div class="icon">🏛️</div><span class="badge orange">HISTÓRIA</span><span class="access-pill">🔓 Liberado</span><h3>Estado Moderno e Navegações</h3><p>50 questões sobre Estado Moderno, absolutismo, mercantilismo e Grandes Navegações.</p><div class="mission-actions"><button class="btn soft open-mission" data-id="history04" data-start="review" type="button">Revisar</button><button class="btn orange open-mission" data-id="history04" data-start="exercise1" type="button">5 exercícios</button></div></article>
+    <article class="card subject portuguese"><div class="icon">✍️</div><span class="badge orange">REDAÇÃO</span><span class="access-pill">🔓 Liberado</span><h3>Crônica narrativa</h3><p>50 questões sobre trama, personagens, ambiente, tempo, linguagem e produção de crônica.</p><div class="mission-actions"><button class="btn soft open-mission" data-id="writing03" data-start="review" type="button">Revisar</button><button class="btn orange open-mission" data-id="writing03" data-start="exercise1" type="button">5 exercícios</button></div></article>
+    <article class="card subject portuguese"><div class="icon">📖</div><span class="badge">PORTUGUÊS</span><span class="access-pill">🔓 Liberado</span><h3>Crônica e análise linguística</h3><p>50 questões sobre crônica, linguagem, figuras, advérbios, oração, sujeito e predicado.</p><div class="mission-actions"><button class="btn soft open-mission" data-id="portuguese03" data-start="review" type="button">Revisar</button><button class="btn open-mission" data-id="portuguese03" data-start="exercise1" type="button">5 exercícios</button></div></article>
+    <article class="card subject science"><div class="icon">🔬</div><span class="badge green">CIÊNCIAS</span><span class="access-pill">🔓 Liberado</span><h3>Defesas, fungos e invertebrados</h3><p>50 questões sobre vacinas, medicamentos, fungos e grupos de invertebrados.</p><div class="mission-actions"><button class="btn soft open-mission" data-id="science03" data-start="review" type="button">Revisar</button><button class="btn green open-mission" data-id="science03" data-start="exercise1" type="button">5 exercícios</button></div></article>
+    <article class="card subject math"><div class="icon">➗</div><span class="badge">MATEMÁTICA</span><span class="access-pill">🔓 Liberado</span><h3>Inteiros, racionais e equações</h3><p>50 questões sobre inteiros, racionais, expressões algébricas e equações do 1º grau.</p><div class="mission-actions"><button class="btn soft open-mission" data-id="math04" data-start="review" type="button">Revisar</button><button class="btn open-mission" data-id="math04" data-start="exercise1" type="button">5 exercícios</button></div></article>
+    <article class="card subject geo"><div class="icon">🌎</div><span class="badge green">GEOGRAFIA</span><span class="access-pill">🔓 Liberado</span><h3>Cidade, campo e indústria</h3><p>50 questões sobre cidades, campo, terra, trabalho, indústria, comunicação e transportes.</p><div class="mission-actions"><button class="btn soft open-mission" data-id="geo03" data-start="review" type="button">Revisar</button><button class="btn green open-mission" data-id="geo03" data-start="exercise1" type="button">5 exercícios</button></div></article>
+    <article class="card subject science"><div class="icon">🧬</div><span class="badge blue">BIBLIOTECA</span><span class="access-pill">🔓 Liberado</span><h3>Ciências nº 02</h3><p>50 questões sobre ecologia, classificação, vírus, bactérias, protozoários e algas.</p><div class="mission-actions"><button class="btn soft open-mission" data-id="science02" data-start="review" type="button">Revisar</button><button class="btn blue open-mission" data-id="science02" data-start="exercise1" type="button">5 exercícios</button></div></article>
   </div>
 </section>
 
@@ -145,8 +145,17 @@
 
 <footer class="footer">Missão Nota 10 • Duda • 7º ano • Acesso livre</footer>
 </main>
-<script src="data-v3.js?v=20260729-3"></script>
-<script src="avatar-system-v4.js?v=20260730-4"></script>
-<script src="app-v4.js?v=20260730-4"></script>
+<script src="data-core-v5.js?v=20260730-5"></script>
+<script src="data-english-v5.js?v=20260730-5"></script>
+<script src="data-math-v5.js?v=20260730-5"></script>
+<script src="data-religion03-v5.js?v=20260730-5"></script>
+<script src="data-history04-v5.js?v=20260730-5"></script>
+<script src="data-writing03-v5.js?v=20260730-5"></script>
+<script src="data-portuguese03-v5.js?v=20260730-5"></script>
+<script src="data-science03-v5.js?v=20260730-5"></script>
+<script src="data-science02-v5.js?v=20260730-5"></script>
+<script src="data-geo03-v5.js?v=20260730-5"></script>
+<script src="avatar-system-v4.js?v=20260730-5"></script>
+<script src="app-v4.js?v=20260730-5"></script>
 </body>
 </html>
