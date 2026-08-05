@@ -1,4 +1,4 @@
-const CACHE='missao-nota10-v9';
+const CACHE='missao-nota10-v10';
 const FILES=['./','./index.html','./index-v2.html','./assets/v2.css','./assets/avatar-v2.css','./assets/avatar-system.js','./assets/mission-v2.js','./assets/ciencias-misturas-data.js','./assets/religiao-data.js','./avatar-v2.html','./matematica-1-1-v2.html','./ciencias-1-1-v2.html','./ciencias-misturas-v2.html','./ciencias-misturas-missao-v2.html','./religiao-v2.html','./religiao-missao-v2.html','./portugues-1-1-v2.html','./playlist-v2.html','./pais-v2.html','./manifest.webmanifest'];
 self.addEventListener('install',event=>{self.skipWaiting();event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(FILES)))});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim()))});
