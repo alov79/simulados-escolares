@@ -1,62 +1,62 @@
-const Q=(q,o,a,e)=>({q,o,a,e});const M=(t,d,n,a)=>({t,d,notes:n,training:a.slice(0,3),quiz:a});window.MISSION50_DATA={subject:'Inglês • 3ª Unidade',icon:'🇬🇧',map:'ingles03-v3.html',videos:[],missions:[
-M('Jobs','Identificar profissões usando vocabulário e pistas de contexto.',['Jobs significa profissões ou trabalhos.','Observe o que a pessoa faz e o local em que trabalha para descobrir a profissão.','Leia a frase inteira antes de escolher a resposta.'],[
-Q('Who works in a hospital and takes care of sick people?',['A doctor','A chef','A pilot','A farmer'],0,'A doctor works in a hospital and takes care of sick people.'),
-Q('Who teaches students at school?',['A dentist','A teacher','A baker','A firefighter'],1,'A teacher teaches students at school.'),
-Q('Who cooks food in a restaurant?',['A pilot','A farmer','A chef','A vet'],2,'A chef cooks food in a restaurant.'),
-Q('Who flies an airplane?',['A police officer','A pilot','A teacher','A dentist'],1,'A pilot flies an airplane.'),
-Q('Who takes care of animals when they are sick?',['A vet','A chef','A firefighter','A baker'],0,'A vet takes care of sick animals.'),
-Q('Who helps put out fires?',['A teacher','A dentist','A firefighter','A farmer'],2,'A firefighter helps put out fires.'),
-Q('Who grows food on a farm?',['A doctor','A farmer','A pilot','A police officer'],1,'A farmer works on a farm and grows food.'),
-Q('Who checks your teeth?',['A baker','A dentist','A vet','A chef'],1,'A dentist checks and takes care of teeth.'),
-Q('Who makes bread and cakes?',['A baker','A firefighter','A teacher','A doctor'],0,'A baker makes bread and cakes.'),
-Q('Read the clue: “She wears a uniform and helps keep people safe in the city.” What is her job?',['Chef','Police officer','Pilot','Farmer'],1,'A police officer helps keep people safe.')
+const Q=(q,o,a,e)=>({q,o,a,e});const M=(t,d,n,a)=>({t,d,notes:n,training:a.slice(0,3),quiz:a});window.MISSION50_DATA={subject:'Inglês • Avaliação nº 02',icon:'🇬🇧',map:'ingles03-v3.html',videos:[],missions:[
+M('Places in town','Reconhecer lugares da cidade e escolher o local adequado para cada situação.',['Places in town são locais da cidade, como bank, hospital, bakery, supermarket e library.','Leia a situação: o que a pessoa precisa fazer? Isso ajuda a escolher o lugar correto.','Algumas questões misturam vocabulário e compreensão de contexto.'],[
+Q('You need to borrow a book. Where should you go?',['Library','Bakery','Hospital','Bank'],0,'You borrow books at a library.'),
+Q('Where can you buy bread and cakes?',['Museum','Bakery','Police station','School'],1,'A bakery sells bread and cakes.'),
+Q('Your little brother is sick. Where do you take him?',['Park','Hospital','Cinema','Post office'],1,'A hospital is the correct place for medical care.'),
+Q('You want to watch a movie. Where do you go?',['Cinema','Bank','Pharmacy','Library'],0,'You watch movies at the cinema.'),
+Q('Where can you buy medicine?',['Pharmacy','Bakery','Museum','Restaurant'],0,'You buy medicine at a pharmacy.'),
+Q('You need to buy fruit, milk and cereal. Where do you go?',['Supermarket','Police station','Cinema','Library'],0,'A supermarket sells food and household products.'),
+Q('Where do police officers work?',['Police station','Hospital','Bakery','Park'],0,'Police officers work at a police station.'),
+Q('You need to send a letter. Which place is best?',['Post office','Museum','School','Restaurant'],0,'You send letters at a post office.'),
+Q('Which place is mainly for seeing paintings and old objects?',['Museum','Bank','Pharmacy','Bakery'],0,'Museums display art and historical objects.'),
+Q('You want to eat a meal prepared for you. Where do you go?',['Restaurant','Library','Bank','Post office'],0,'You eat prepared meals at a restaurant.')
 ]),
-M('Personality Adjectives','Usar adjetivos para descrever como uma pessoa costuma agir.',['Personality adjectives descrevem características da personalidade.','Use as pistas da frase para escolher o adjetivo mais adequado.','Palavras como kind, friendly, shy, brave e helpful descrevem pessoas.'],[
-Q('Lia always helps her classmates. She is very ___.',['helpful','shy','angry','lazy'],0,'Helpful means that she likes to help others.'),
-Q('Pedro is not afraid to speak in front of the class. He is ___.',['shy','brave','quiet','sad'],1,'Brave describes someone who faces difficult or scary situations with courage.'),
-Q('Ana likes meeting new people and talking to everyone. She is ___.',['friendly','shy','lazy','angry'],0,'Friendly describes someone who is kind and sociable with others.'),
-Q('Tom does not like speaking to new people. He is ___.',['funny','brave','shy','helpful'],2,'Shy describes someone who feels nervous or quiet with new people.'),
-Q('Marina makes everyone laugh. She is ___.',['serious','funny','shy','quiet'],1,'Funny means she makes people laugh.'),
-Q('João waits calmly when other people need time. He is ___.',['patient','angry','lazy','noisy'],0,'Patient describes someone who can wait calmly.'),
-Q('Sofia has many new ideas for drawings and stories. She is ___.',['creative','shy','sad','rude'],0,'Creative describes someone who has original ideas.'),
-Q('Lucas studies and finishes his tasks every day. He is ___.',['hardworking','lazy','rude','shy'],0,'Hardworking means he works and studies with effort.'),
-Q('Bia speaks politely and cares about other people. She is ___.',['kind','angry','lazy','noisy'],0,'Kind means caring and nice to other people.'),
-Q('Which adjective best completes the sentence? “My friend always checks her work before handing it in. She is very ___.”',['careful','funny','shy','noisy'],0,'Careful means she pays attention and checks what she does.')
+M('Directions','Entender instruções simples para se deslocar pela cidade.',['Go straight = siga em frente. Turn left = vire à esquerda. Turn right = vire à direita.','Next to = ao lado de. Across from = em frente a. Between = entre.','Leia a sequência inteira antes de escolher o destino ou a instrução correta.'],[
+Q('Which instruction means “vire à direita”?',['Turn left','Go straight','Turn right','Stop here'],2,'Turn right means vire à direita.'),
+Q('Which instruction means “siga em frente”?',['Go straight','Turn left','Across from','Next to'],0,'Go straight means siga em frente.'),
+Q('The bank is next to the bakery. What does “next to” mean?',['Atrás de','Ao lado de','Longe de','Dentro de'],1,'Next to means ao lado de.'),
+Q('The cinema is across from the park. Where is the cinema?',['Em frente ao parque','Ao lado do parque','Dentro do parque','Atrás do parque'],0,'Across from means em frente a.'),
+Q('The library is between the bank and the museum. Which place is in the middle?',['The bank','The museum','The library','The park'],2,'Between means entre two places; the library is in the middle.'),
+Q('You are walking north. The school is on your left. What should you do to reach it?',['Turn left','Turn right','Go back home','Keep going forever'],0,'If the school is on your left, turn left.'),
+Q('Read the directions: “Go straight, then turn right. The pharmacy is next to the bank.” What happens first?',['Turn right','Go straight','Enter the bank','Turn left'],1,'The first instruction is go straight.'),
+Q('Which sentence gives a direction, not a location?',['The hospital is next to the bank.','Turn left at the corner.','The park is across from the school.','The museum is between two shops.'],1,'Turn left at the corner tells you what to do.'),
+Q('The supermarket is across from the school and next to the bakery. Which statement is true?',['It is in front of the school.','It is inside the school.','It is far from the bakery.','It is behind the bakery.'],0,'Across from means in front of/opposite the school.'),
+Q('“Turn left at the bank and go straight. The museum is on your right.” Where should you look after going straight?',['To your right','To your left','Behind you','At the bank'],0,'The directions say the museum is on your right.')
 ]),
-M('Have to / Must','Reconhecer obrigações e regras usando have to e must.',['Have to e must podem indicar obrigação ou necessidade.','Depois de have to ou must, use o verbo na forma base: must study; have to wear.','Leia o contexto para perceber qual ação é obrigatória.'],[
-Q('Students ___ wear the school uniform on uniform day.',['have to','because','friendly','doctor'],0,'Have to shows an obligation.'),
-Q('You ___ stop when the traffic light is red.',['must','because','kind','pilot'],0,'Must is appropriate for a strong rule or obligation.'),
-Q('I ___ do my homework before I play video games.',['have to','because','shy','teacher'],0,'Have to expresses an obligation.'),
-Q('At the library, we ___ be quiet.',['must','because','helpful','chef'],0,'Must be quiet expresses a rule.'),
-Q('After “must”, which form is correct?',['must to study','must studying','must study','must studies'],2,'Must is followed by the base form of the verb.'),
-Q('After “have to”, which sentence is correct?',['I have to clean my room.','I have clean my room.','I have to cleaning my room.','I have to cleans my room.'],0,'Have to is followed by the base form: clean.'),
-Q('Choose the sentence that shows an obligation.',['She is friendly.','I must finish my project today.','He is a doctor.','They are funny.'],1,'Must finish expresses an obligation.'),
-Q('Which sentence is about a school rule?',['Students must listen to the teacher.','The teacher is funny.','The vet likes animals.','Because it is sunny.'],0,'Must listen expresses a school rule.'),
-Q('Complete: “We ___ wash our hands before lunch.”',['have to','because','shy','farmer'],0,'Have to expresses what we need to do.'),
-Q('Which option is grammatically correct?',['She must to study.','She must studies.','She must study.','She must studying.'],2,'Must + base verb: must study.')
+M('Going to: plans','Usar be going to para falar de planos futuros em frases afirmativas e negativas.',['Use be going to for plans: I am going to study. She is going to travel. They are going to play.','Negative forms: I am not going to..., He/She isn’t going to..., We/You/They aren’t going to...','Choose am/is/are according to the subject.'],[
+Q('Complete: “I ___ going to visit my grandmother tomorrow.”',['am','is','are','be'],0,'With I, use am: I am going to...'),
+Q('Complete: “She ___ going to watch a movie tonight.”',['am','are','is','be'],2,'With she, use is.'),
+Q('Complete: “They ___ going to play soccer after school.”',['is','are','am','be'],1,'With they, use are.'),
+Q('Choose the correct sentence.',['He is going to study tonight.','He are going to study tonight.','He am going to study tonight.','He going to studies tonight.'],0,'He takes is, followed by going to + base verb.'),
+Q('Choose the correct negative sentence for “She is going to swim.”',['She not going to swim.','She isn’t going to swim.','She aren’t going to swim.','She doesn’t going to swim.'],1,'The correct negative is she isn’t going to swim.'),
+Q('Complete: “We ___ going to go to the cinema today.”',['is','am','are','be'],2,'With we, use are.'),
+Q('Which sentence means “Eu não vou estudar esta noite”?',['I am not going to study tonight.','I is not going to study tonight.','I aren’t going to study tonight.','I not going study tonight.'],0,'I am not going to... is the correct structure.'),
+Q('Complete: “My brother ___ going to eat dinner at 7.”',['are','is','am','be'],1,'My brother = he, so use is.'),
+Q('Choose the correct form: “You ___ going to listen to music later.”',['am','is','are','be'],2,'With you, use are.'),
+Q('Which sentence is NOT correct?',['They are going to travel.','She is going to read.','I am going to sleep.','We is going to eat.'],3,'With we, the verb must be are, not is.')
 ]),
-M('Because','Explicar motivos usando because.',['Because significa “porque” e apresenta uma razão.','Uma frase com because liga uma ação ou ideia ao motivo dela.','Pergunte “por quê?”: a parte depois de because deve explicar o motivo.'],[
-Q('I wear a coat ___ it is cold.',['must','because','teacher','friendly'],1,'Because introduces the reason: it is cold.'),
-Q('She studies every day ___ she has a test.',['because','must','doctor','shy'],0,'The test is the reason she studies.'),
-Q('We have to be quiet ___ the baby is sleeping.',['because','pilot','kind','must'],0,'Because explains why we need to be quiet.'),
-Q('He must wear a helmet ___ he is riding a bike.',['because','have to','chef','funny'],0,'Because gives the reason for wearing a helmet.'),
-Q('Which part gives the reason? “I take an umbrella because it is raining.”',['I take an umbrella','because','it is raining','umbrella'],2,'“It is raining” is the reason.'),
-Q('Choose the best completion: “I have to wake up early because ___.”',['I have school in the morning','teacher','must','friendly'],0,'The clause explains the reason for waking up early.'),
-Q('Which sentence uses because correctly?',['I am tired because I went to bed late.','I because tired late.','Because doctor is job.','I must because homework.'],0,'Because correctly connects the situation to its reason.'),
-Q('Complete: “The firefighter is brave because ___.”',['he helps people in dangerous situations','must','teacher','shy'],0,'The clause gives a logical reason for calling the firefighter brave.'),
-Q('Why do we use “because” in a sentence?',['To name a job','To give a reason','To describe only a place','To ask a question'],1,'Because is used to give a reason.'),
-Q('Choose the sentence with a clear reason.',['She is kind because she helps her friends.','She because kind friends.','Must she kind.','Doctor because job.'],0,'The second clause explains why she is kind.')
+M('Going to: questions','Formar perguntas e respostas curtas com be going to.',['Questions invert the verb be and the subject: Is she going to...? Are they going to...?','Short answers repeat only be: Yes, she is. No, they aren’t.','With I: Am I going to...? With he/she: Is... With you/we/they: Are...'],[
+Q('Choose the correct question.',['Is she going to eat dinner?','Does she going to eat dinner?','She is going to eat dinner?','Are she going to eat dinner?'],0,'With she, use Is she going to...?'),
+Q('Complete: “___ they going to play soccer?”',['Is','Am','Are','Do'],2,'With they, use Are.'),
+Q('Complete: “___ he going to visit the museum?”',['Are','Is','Am','Do'],1,'With he, use Is.'),
+Q('Question: “Are you going to the cinema?” Choose a correct short answer.',['Yes, I am.','Yes, I is.','Yes, I are.','Yes, I going.'],0,'For you → I in the answer: Yes, I am.'),
+Q('Question: “Is she going to study?” Choose the negative short answer.',['No, she aren’t.','No, she isn’t.','No, she not.','No, she doesn’t.'],1,'The correct answer is No, she isn’t.'),
+Q('Question: “Are they going to travel?” Choose the positive short answer.',['Yes, they is.','Yes, they am.','Yes, they are.','Yes, they going.'],2,'With they, use are.'),
+Q('Which is the correct question for “We are going to New York City”?',['Are we going to New York City?','Is we going to New York City?','Do we going to New York City?','We are going to New York City?'],0,'Question form: Are we going to...?'),
+Q('Complete: “___ I going to need a jacket?”',['Is','Are','Am','Do'],2,'With I, the question begins Am I...?'),
+Q('Choose the correct pair.',['Is he going to eat? — Yes, he is.','Is he going to eat? — Yes, he are.','Are he going to eat? — Yes, he is.','Does he going to eat? — Yes, he does.'],0,'Is he...? Yes, he is.'),
+Q('Which answer matches “Are we going to listen to music?”',['No, we aren’t.','No, we isn’t.','No, we am not.','No, we don’t going.'],0,'With we, the short negative answer is No, we aren’t.')
 ]),
-M('Final Review','Misturar Jobs, Personality Adjectives, Have to / Must e Because.',['Agora combine os quatro conteúdos da avaliação.','Procure pistas de profissão, personalidade, obrigação e motivo.','No modo prova, as alternativas aparecem em posições variadas e o resultado só é mostrado no final.'],[
-Q('Read: “Carlos works at a school and helps children learn.” What is his job?',['Teacher','Vet','Pilot','Chef'],0,'Someone who works at a school teaching children is a teacher.'),
-Q('Read: “Mia always shares her materials and helps her friends.” Which adjective fits best?',['shy','helpful','angry','lazy'],1,'Helpful fits because she helps other people.'),
-Q('Choose the best sentence for a school rule.',['Students must arrive on time.','Students friendly on time.','Students because arrive.','Students doctor time.'],0,'Must expresses a rule or obligation.'),
-Q('Complete: “I have to study ___ I have a test tomorrow.”',['must','because','teacher','friendly'],1,'Because introduces the reason for studying.'),
-Q('Read: “He works with sick animals and is very patient.” Which pair is correct?',['Vet + patient','Pilot + shy','Chef + angry','Teacher + farmer'],0,'A vet works with animals; patient describes his personality.'),
-Q('Which sentence is correct?',['She must helps her mother.','She must helping her mother.','She must help her mother.','She must to help her mother.'],2,'Must is followed by the base verb: help.'),
-Q('Read: “Julia does not like talking in front of the class.” She is probably ___.',['brave','friendly','shy','funny'],2,'Shy is the best personality adjective for this clue.'),
-Q('Choose the best completion: “A firefighter must be brave because ___.”',['the job can be dangerous','he is a baker','must because','she is shy'],0,'The reason logically explains why bravery is important.'),
-Q('Which option contains a job and a personality adjective?',['doctor + kind','must + because','study + school','have to + teacher'],0,'Doctor is a job and kind is a personality adjective.'),
-Q('Read: “Leo has to wear a helmet because he rides his bike to school.” What does “because” introduce?',['The job','The reason','The personality adjective','The obligation word'],1,'Because introduces the reason: he rides his bike to school.')
+M('Final Review','Misturar Directions, Places in town e Going to em situações mais próximas de prova.',['Combine vocabulário da cidade, instruções de caminho e planos futuros.','Preste atenção ao sujeito para escolher am/is/are.','Nas questões de direção, leia todas as pistas antes de responder.'],[
+Q('You are at the bank. Go straight and turn left at the bakery. The library is next to the bakery. Where are you going?',['To the library','To the hospital','To the park','To the cinema'],0,'The directions place the library next to the bakery after the left turn.'),
+Q('Complete: “Tomorrow, we ___ going to visit the museum.”',['is','am','are','be'],2,'With we, use are.'),
+Q('Which place is best if you need medicine before going home?',['Pharmacy','Cinema','Museum','School'],0,'Medicine is bought at a pharmacy.'),
+Q('Read: “The supermarket is across from the bank.” What does this tell you?',['They are opposite each other.','They are the same building.','The supermarket is behind the bank.','The bank is inside the supermarket.'],0,'Across from means opposite/in front of.'),
+Q('Choose the correct negative sentence.',['They aren’t going to play today.','They isn’t going to play today.','They don’t going to play today.','They not are going to play today.'],0,'With they, the negative is aren’t going to.'),
+Q('Choose the correct question.',['Are you going to go to the cinema?','Is you going to go to the cinema?','Do you going to go to the cinema?','You are going to go to the cinema?'],0,'With you, use Are you going to...?'),
+Q('Directions: “Go straight. Turn right at the bank. The hospital is on your left.” What do you do at the bank?',['Turn right','Turn left','Stop and go back','Cross the park'],0,'The instruction says turn right at the bank.'),
+Q('Question: “Is Pedro going to eat at the restaurant?” Which short answer is correct?',['Yes, he is.','Yes, he are.','Yes, Pedro am.','Yes, he going.'],0,'Pedro = he, so Yes, he is.'),
+Q('The museum is between the library and the cinema. Which statement is correct?',['The museum is in the middle of the two places.','The museum is across from both places.','The library is inside the museum.','The cinema is next to itself.'],0,'Between means in the middle of two places.'),
+Q('Read: “Sofia and Ana are going to the bakery. First, they go straight and then turn left.” Which statement combines the plan and the direction correctly?',['They are going to the bakery, and they need to turn left after going straight.','They is going to the bakery and turn right first.','They are going to the hospital and go back.','They am going to the bakery and never turn.'],0,'This option matches both the going-to plan and the directions.')
 ])
 ]};
